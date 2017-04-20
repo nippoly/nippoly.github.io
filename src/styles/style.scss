@@ -1,26 +1,213 @@
 //ファイルのインポート
+@import 'lib/import';
 @import "lib/base";
 @import "lib/layout";
 @import "lib/mixins";
 
-
 body {
-	background-color: #fff;
-	font-family: mc-l;
+	background-color: #fcf5eb;
+	font-family: "Sawarabi Mincho";
+	font-size: 12px;
 }
 
-.bd , th ,td {
-	border: 1px solid #000;
-	border-collapse: collapse;
-	padding: 3px 10px;
-}
-
-#content {
-	width: 300px;
+// 全体の両側を開けたい
+.center-all {
+	width: 70%;
 	margin: 0 auto;
+	background-color: #fff;
+	@include media-query(sp) {
+		width: 100%;
+	}
 }
 
-h1 {
-	text-align: center;
-	padding: 2.5rem 0;
+nav {
+	color: #000;
+	overflow: hidden;
 }
+
+.title {
+	width: 80%;
+	float: left;
+	margin-left: 10px;
+	@include media-query(tb) {
+		font-size: 3em;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.list {
+	width: 30%;
+	margin:  0 auto 0;
+	padding: 2em 0 0;
+	overflow: hidden;
+	@include media-query(sp) {
+		display: none;
+	}
+	li {
+		float: left;
+		width: 25%;
+		list-style-type: none;
+		text-align: center;
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}
+
+.hambergur {
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	float: right;
+	margin-right: 10px;
+	@include media-query(tb) {
+		display: none;
+	}
+}
+
+.bar {
+	width: 70%;
+	height: 2px;
+	background-color: #000;
+	margin: 5px 0px;
+}
+
+.sub-title {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.slideshow {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	img {
+		width: 95%;
+	}
+}
+
+.message {
+	line-height: 2.3em;
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+
+.read {
+	text-align: center;
+	p {
+		margin-bottom: 20px;
+	}
+	.button {
+		width: 85%;
+		margin: 0 auto;
+		border: solid #000 1px;
+		overflow: hidden;
+		.button-image {
+			width: 40%;
+			height: 70px;
+			float: left;
+			background-image: url(../img/maker.png);
+			background-size: cover;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+			display: block;
+			line-height: 70px;
+			transition: 0.7s;
+			&:hover {
+				background-color: #fcf5eb;
+			}
+		}
+	}
+}
+
+.new-products {
+	h2 {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.product {
+		text-align: center;
+		img {
+			width: 80%;
+		}
+		h3 {
+			text-align: center;
+			font-size: 1.4em;
+			letter-spacing: 1px;
+		}
+		h4 {
+			font-size: 1em;
+			line-height: 1.8em;
+			letter-spacing: 1px;
+		}
+		p {
+			line-height: 1.8em;
+			font-size: 0.8em;
+			letter-spacing: 1px;
+		}
+		a {
+			text-decoration: none;
+			margin-top: 15px;
+			color: #000;
+			border: solid #000 1px;
+			padding: 10px 20px;
+			display: inline-block;
+			&:hover {
+				background-color: #fcf5eb;
+				transition: 0.8s;
+			}
+		}
+	}
+}
+
+.news {
+	width: 80%;
+	margin: 0 auto;
+	h2 {
+		text-align: center;
+		margin-bottom: 1.5em;
+	}
+	ul {
+		li {
+			list-style-type: none;
+			margin: 2em 0;
+		}
+	}
+}
+
+.footer {
+	background-color: #fff;
+	border-top: solid #000 1px;
+	overflow: hidden;
+	padding: 1em 0 1em;
+	ul {
+		width: 80%;
+		margin: 2em auto;
+		overflow: hidden;
+		li {
+			list-style-type: none;
+			float: left;
+			width: 25%;
+			text-align: center;
+			overflow: hidden;
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 3em;
+			}
+		}
+	}
+	p {
+		text-align: center;
+		small {
+			padding-top: 2em;
+		}
+	}
+}
+
+//こっからabout.htmlが主に適用

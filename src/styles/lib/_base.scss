@@ -10,7 +10,7 @@ $facebook: #235a99 !important;
 $instagram: #2a5b83 !important;
 $nicovideo: #efb10a !important;
 
-////////// フォント light
+////////// フォント
 @font-face{
 	font-family: mc-l;
 	src:url(../font/mplus-1m-light.ttf)format("opentype");
@@ -37,3 +37,10 @@ $nicovideo: #efb10a !important;
 
 /////// Typography
 // Font-size
+
+//縦書き
+.vertical {
+	writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode:vertical-rl;
+}

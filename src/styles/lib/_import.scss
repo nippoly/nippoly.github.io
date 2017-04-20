@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+$breakpoints: (
+  "zr":  'screen and (min-width: 0em)',  
+  "sp": 'screen and (max-width: 32em)', 
+  "tb": 'screen and (min-width: 72em)', 
+  "pc": 'screen and (min-width: 96em)' 
+);
+
+//targeting <568px devices (e.g. all iPhones <6)
+//targeting >=568px devices (e.g. iPhones >=6)
+//targeting >=768px tablets (e.g. portrait iPad)
+//targeting >=1024px tablets (e.g. landscape iPad) and desktops but leaving room for the scroll bar
