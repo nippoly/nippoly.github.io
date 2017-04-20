@@ -1,0 +1,26 @@
+//ファイルのインポート
+@import "lib/base";
+@import "lib/layout";
+@import "lib/mixins";
+
+
+body {
+	background-color: #fff;
+	font-family: mc-l;
+}
+
+.bd , th ,td {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	padding: 3px 10px;
+}
+
+#content {
+	width: 300px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	padding: 2.5rem 0;
+}
