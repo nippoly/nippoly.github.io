@@ -11,7 +11,7 @@ nippolyにLPを作成する
 ## 対応してること
 ES6 / SCSS / のコンパイル
 
-##　開発のやり方
+## 開発のやり方
 html publicのindexに直接書く
 css src/stylesから適宜
 js  src/js/index.jsが基本で適宜
