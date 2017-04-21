@@ -10262,7 +10262,21 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log('start'); //スタート
-console.log("end"); //終わり
+(0, _jquery2.default)(document).ready(function () {
+	//gifをリロードしても動かす
+	var now = new Date().getTime();
+	(0, _jquery2.default)('#box').append('<img id="unchi" src="../img/download.gif' + '?' + '' + now + '" alt="" />');
+	(0, _jquery2.default)('#box2').append('<img id="unchi2" src="../img/copy.gif' + '?' + '' + now + '" alt="" />');
+	(0, _jquery2.default)('#box3').append('<img id="unchi3" src="../img/clipboard.gif' + '?' + '' + now + '" alt="" />');
+	(0, _jquery2.default)('#box4').append('<img id="unchi4" src="../img/clip.gif' + '?' + '' + now + '" alt="" />');
+	//gifを何回も動かす
+	setInterval(function () {
+		var timestamp = new Date().getTime();
+		(0, _jquery2.default)('#unchi').attr('src', '../img/download.gif' + '?' + timestamp);
+		(0, _jquery2.default)('#unchi2').attr('src', '../img/copy.gif' + '?' + timestamp);
+		(0, _jquery2.default)('#unchi3').attr('src', '../img/clipboard.gif' + '?' + timestamp);
+		(0, _jquery2.default)('#unchi4').attr('src', '../img/clip.gif' + '?' + timestamp);
+	}, 1900);
+});
 
 },{"jquery":1}]},{},[2]);

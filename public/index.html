@@ -4,19 +4,25 @@
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.png">
     <title>nippoly</title>
   </head>
   <body>
     <header id="header" class="">
       <div class="share">
-        
+        <div class="share-box">
+          <span class="share-text">SHARE : </span>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
       </div>
       <h1 class="title">
-        <img src="img/nippo_logo.png" height="260" width="845" alt="">
+        <img src="img/nippo_logo.png" alt="">
       </h1>
       <div class="links">
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="#"><i class="fa fa-download" aria-hidden="true"></i>無料ではじめる ver.β</a>
+        <a href="#"><i class="fa fa-github" aria-hidden="true"></i>GitHubをみる</a>
       </div>
       <nav>
         <ul>
@@ -31,13 +37,23 @@
     <div class="image_view"></div>
 
     <div class="about">
-      <h2><img src="" alt="">とは？</h2>
+      <h2><img src="img/logo_nippoly2.png" alt="">とは？</h2>
       <p class="comment">きっかけは、私たちが始めた日報でした。</p>
       <div class="description">
-        <p></p>
+        <p>日報はとてもいいもので、チーム内の情報共有や、<br>
+        行動の言語化による自分たちの成長、自分ができることの<br>
+        可視化などにとても役に立ちます。<br>
+        私たちが書いている日報の中には、「読んだもの」という項目があります。<br>
+        一日に読んだ記事やそれに付随する思ったことを書くことで、<br>
+        それを読んだメンバーからレビューをもらったり、<br>
+        別の考えをもらって知見が広まったりします。<br>
+        この「読んだもの」のリンクを素早くまとめられるように、<br>
+        読んだ記事のリンクを簡単にまとめることができる<br>
+        nippolyを開発しました。<br>
+        </p>
         <a href="#">日報についてもっとみる ＞ </a>
       </div>
-      <img src="" alt="">
+      <img src="img/screen_demo2.png" alt="" class="scsho">
     </div>
 
     <div class="way">
@@ -46,23 +62,27 @@
       <div class="container">
         <div class="steps">
           <h3>Step.1</h3>
-          <img src="" alt="">
+          <div id="box"></div>
           <h4>nippolyをダウンロード</h4>
+          <p></p>
         </div>
         <div class="steps">
           <h3>Step.2</h3>
-          <img src="" alt="">
+          <div id="box2"></div>
           <h4>読んだものをストック</h4>
+          <p></p>
         </div>
         <div class="steps">
           <h3>Step.3</h3>
-          <img src="" alt="">
+          <div id="box3"></div>
           <h4>クリップボードにコピー</h4>
+          <p></p>
         </div>
         <div class="steps">
           <h3>Step.4</h3>
-          <img src="" alt="">
+          <div id="box4"></div>
           <h4>日報に貼り付ける</h4>
+          <p></p>
         </div>
       </div>
     </div>
@@ -94,5 +114,13 @@
       <p>Copyrights</p>
     </footer>
     <script src="js/bundle.js"></script>
+    <script>
+      var gifImage2 = document.getElementById("unchi2");
+      gifImage2.src = "img/copy.gif?" + (new Date).getTime();
+      var gifImage3 = document.getElementById("unchi3");
+      gifImage3.src = "img/clipboard.gif?" + (new Date).getTime();
+      var gifImage4 = document.getElementById("unchi4");
+      gifImage4.src = "img/clip.gif?" + (new Date).getTime();
+    </script>
   </body>
 </html>
