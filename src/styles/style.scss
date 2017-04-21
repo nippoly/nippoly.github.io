@@ -169,13 +169,13 @@ header {
 		margin-top: 105px;
 		.steps {
 			width: 446px;
-			height: 371px;
+			height: 385px;
 			background-color: #fff;
 			border: solid 8px #222222;
 			border-radius: 23px;
 			float: left;
 			margin-right: 110px;
-			margin-bottom: 73px;
+			margin-bottom: 80px;
 			text-align: center;
 			&:nth-child(2n) {
 				margin: 0;
@@ -208,7 +208,62 @@ header {
 	}
 }
 
-
+.version {
+	background-color: #ff0033;
+	padding-top: 200px;
+	.contaier2 {
+		width: 840px;
+		margin: 0 auto;
+		background-color: #fff;
+		border: solid 8px #222222;
+		border-radius: 28px;
+		padding-bottom: 120px;
+		h2 {
+			font-size: 64px;
+			text-align: center;
+			color: #ff0033;
+			margin-top: 50px;
+			text-shadow: 6px 6px 0 #be514c;
+		}
+		.sub-title {
+			text-align: center;
+			color: #ff0033;
+			letter-spacing: 2px;
+			font-weight: bold;
+			font-size: 24px;
+			overflow: hidden;
+		}
+		.v {
+			margin-top: 60px;
+			h5 {
+				width: 222px;
+				height: 46px;
+				// border-radius: 10px;
+				text-align: center;
+				line-height: 46px;
+				border: solid 5px #222222;
+				font-size: 24px;
+				margin: 0 auto 28px;
+			}
+			p {
+				width: 500px;
+				margin: 0 auto;
+				font-size: medium;
+				font-size: 20px;
+				line-height: 46px;
+				.right {
+					float: right;
+				}
+			}
+		}
+		.partial {
+			height: 3px;
+			margin: 60px auto;
+			width: 90%;
+			background-color: #222222;
+		}
+	}
+}
 
 
 
