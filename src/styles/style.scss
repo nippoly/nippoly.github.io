@@ -211,13 +211,14 @@ header {
 .version {
 	background-color: #ff0033;
 	padding-top: 200px;
+	padding-bottom: 130px;
 	.contaier2 {
 		width: 840px;
 		margin: 0 auto;
 		background-color: #fff;
 		border: solid 8px #222222;
 		border-radius: 28px;
-		padding-bottom: 120px;
+		padding-bottom: 100px;
 		h2 {
 			font-size: 64px;
 			text-align: center;
@@ -249,7 +250,7 @@ header {
 				width: 500px;
 				margin: 0 auto;
 				font-size: medium;
-				font-size: 20px;
+				font-size: 18px;
 				line-height: 46px;
 				.right {
 					float: right;
@@ -262,6 +263,101 @@ header {
 			width: 90%;
 			background-color: #222222;
 		}
+	}
+}
+
+.contact {
+	margin-top: 82px;
+	h2 {
+		font-size: 64px;
+		text-align: center;
+		color: #ff0031;
+		text-shadow: 5px 5px 0 #be514c;
+	}
+	.sub-title {
+		text-align: center;
+		color: #ff0031;
+		letter-spacing: 2px;
+		font-weight: bold;
+		font-size: 24px;
+		overflow: hidden;
+	}	
+	p {
+		font-size: 18px;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center; 
+	}
+	.p1 {
+		margin-top: 52px;
+	}
+	.p2 {
+		margin-top: 10px;
+	}
+	.address {
+		margin: 45px auto 0;
+		width: 550px;
+		a {
+			text-decoration: none;
+			color: #222222;
+			margin-right: 100px;
+			&:last-child {
+				margin: 0;
+			}
+			.ad {
+				font-size: 64px;
+			}
+		}
+	}
+	.to-top {
+		width: 60px;
+		height: 60px;
+		margin: 200px auto 60px;
+		border: solid #222222 2px;
+		border-radius: 50%;
+		line-height: 60px;
+		p {
+			font-size: 26px;
+		}
+	}
+}
+
+footer {
+	text-align: center;
+	background-color: #222222;
+	padding-bottom: 10px;
+	img {
+		width: 340px;
+		margin-top: 50px;
+	}
+	.share2 {
+		margin-top: 42px;
+		p {
+			text-align: center;
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 18px;
+		}
+		a {
+			height: 66px;
+			width: 66px;
+			display: inline-block;
+			border: #fff solid 2px;
+			margin: 0 15px;
+			.fa {
+				color: #fff;
+				font-size: 25px;
+				line-height: 66px;
+			}
+		}
+	}
+	.copyrights {
+		margin-top: 40px; 
+		color: #b1b1b1;
+		font-size: 14px;
+		font-weight: 100;
+		letter-spacing: 1px;
 	}
 }
 

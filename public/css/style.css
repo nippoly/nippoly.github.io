@@ -283,14 +283,15 @@ header {
 
 .version {
   background-color: #ff0033;
-  padding-top: 200px; }
+  padding-top: 200px;
+  padding-bottom: 130px; }
   .version .contaier2 {
     width: 840px;
     margin: 0 auto;
     background-color: #fff;
     border: solid 8px #222222;
     border-radius: 28px;
-    padding-bottom: 120px; }
+    padding-bottom: 100px; }
     .version .contaier2 h2 {
       font-size: 64px;
       text-align: center;
@@ -318,7 +319,7 @@ header {
         width: 500px;
         margin: 0 auto;
         font-size: medium;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 46px; }
         .version .contaier2 .v p .right {
           float: right; }
@@ -327,3 +328,79 @@ header {
       margin: 60px auto;
       width: 90%;
       background-color: #222222; }
+
+.contact {
+  margin-top: 82px; }
+  .contact h2 {
+    font-size: 64px;
+    text-align: center;
+    color: #ff0031;
+    text-shadow: 5px 5px 0 #be514c; }
+  .contact .sub-title {
+    text-align: center;
+    color: #ff0031;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 24px;
+    overflow: hidden; }
+  .contact p {
+    font-size: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center; }
+  .contact .p1 {
+    margin-top: 52px; }
+  .contact .p2 {
+    margin-top: 10px; }
+  .contact .address {
+    margin: 45px auto 0;
+    width: 550px; }
+    .contact .address a {
+      text-decoration: none;
+      color: #222222;
+      margin-right: 100px; }
+      .contact .address a:last-child {
+        margin: 0; }
+      .contact .address a .ad {
+        font-size: 64px; }
+  .contact .to-top {
+    width: 60px;
+    height: 60px;
+    margin: 200px auto 60px;
+    border: solid #222222 2px;
+    border-radius: 50%;
+    line-height: 60px; }
+    .contact .to-top p {
+      font-size: 26px; }
+
+footer {
+  text-align: center;
+  background-color: #222222;
+  padding-bottom: 10px; }
+  footer img {
+    width: 340px;
+    margin-top: 50px; }
+  footer .share2 {
+    margin-top: 42px; }
+    footer .share2 p {
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 18px; }
+    footer .share2 a {
+      height: 66px;
+      width: 66px;
+      display: inline-block;
+      border: #fff solid 2px;
+      margin: 0 15px; }
+      footer .share2 a .fa {
+        color: #fff;
+        font-size: 25px;
+        line-height: 66px; }
+  footer .copyrights {
+    margin-top: 40px;
+    color: #b1b1b1;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px; }
