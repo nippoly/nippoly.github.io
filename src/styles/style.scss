@@ -33,6 +33,13 @@ header {
 				font-size: 34px;
 				margin: 0 6px;
 			}
+			a {
+				text-decoration: none;
+				color: #222222;
+				&:hover {
+					color: #ff0033;
+				}
+			}
 		}
 	}
 	h1 {
@@ -105,7 +112,7 @@ header {
 }
 
 .about {
-	margin-top: 200px;
+	margin-top: 150px;
 	padding-bottom: 100px;
 	overflow: hidden;
 	h2 {
@@ -136,27 +143,33 @@ header {
 			background-color: #ff0033;
 			color: #fff;
 			font-weight: 300;
+			font-size: 14px;
+			letter-spacing: 1px;
 			border-radius: 6px;
-			margin-top: 30px;
+			margin-top: 40px;
 			text-decoration: none;
 			text-align: center;
 			line-height: 48px;
 			display: inline-block;
 			width: 253px;
 			height: 48px;
+			&:hover {
+				box-shadow: 0px 2px 1px 0 rgba(0, 0, 0, 0.3);
+				opacity: 0.8;
+			}
 		}
 	}
 	.scsho {
 		float: right;
 		width: 660px;
-		margin-top: 50px;
+		margin-top: 40px;
 	}
 }
 
 .way {
 	background-color: #ff0033;
 	margin-top: 120px;
-	padding-top: 200px;
+	padding-top: 150px;
 	h2 {
 		font-size: 64px;
 		text-align: center;
@@ -212,6 +225,7 @@ header {
 				font-size: 14px;
 				margin-top: 14px;
 				letter-spacing: 0.6px;
+				line-height: 22px;
 			}
 		}
 		.clear {
@@ -223,8 +237,8 @@ header {
 
 .version {
 	background-color: #ff0033;
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 150px;
+	padding-bottom: 150px;
 	.contaier2 {
 		width: 840px;
 		margin: 0 auto;
@@ -271,7 +285,7 @@ header {
 			}
 		}
 		.partial {
-			height: 3px;
+			height: 2px;
 			margin: 60px auto;
 			width: 90%;
 			background-color: #222222;
@@ -280,7 +294,7 @@ header {
 }
 
 .contact {
-	margin-top: 200px;
+	margin-top: 150px;
 	h2 {
 		font-size: 64px;
 		text-align: center;
@@ -313,6 +327,9 @@ header {
 			text-decoration: none;
 			color: #222222;
 			margin-right: 100px;
+			&:hover {
+				color: #ff0031;
+			}
 			&:last-child {
 				margin: 0;
 			}
@@ -324,12 +341,15 @@ header {
 	.to-top {
 		width: 60px;
 		height: 60px;
-		margin: 200px auto 60px;
+		margin: 150px auto 60px;
 		border: solid #222222 2px;
 		border-radius: 50%;
 		line-height: 60px;
-		p {
+		text-align: center;
+		a {
 			font-size: 26px;
+			text-decoration: none;
+			display: block;
 		}
 	}
 }
@@ -368,7 +388,7 @@ footer {
 	.copyrights {
 		margin-top: 40px; 
 		color: #b1b1b1;
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 100;
 		letter-spacing: 1px;
 	}

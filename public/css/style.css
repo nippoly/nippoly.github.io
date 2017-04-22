@@ -138,6 +138,11 @@ header {
       header .share .share-box .fa {
         font-size: 34px;
         margin: 0 6px; }
+      header .share .share-box a {
+        text-decoration: none;
+        color: #222222; }
+        header .share .share-box a:hover {
+          color: #ff0033; }
   header h1 {
     text-align: center; }
     header h1 img {
@@ -193,7 +198,7 @@ header {
   background-image: url(../img/nippo-hero.jpg); }
 
 .about {
-  margin-top: 200px;
+  margin-top: 150px;
   padding-bottom: 100px;
   overflow: hidden; }
   .about h2 {
@@ -221,23 +226,28 @@ header {
       background-color: #ff0033;
       color: #fff;
       font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 1px;
       border-radius: 6px;
-      margin-top: 30px;
+      margin-top: 40px;
       text-decoration: none;
       text-align: center;
       line-height: 48px;
       display: inline-block;
       width: 253px;
       height: 48px; }
+      .about .description a:hover {
+        box-shadow: 0px 2px 1px 0 rgba(0, 0, 0, 0.3);
+        opacity: 0.8; }
   .about .scsho {
     float: right;
     width: 660px;
-    margin-top: 50px; }
+    margin-top: 40px; }
 
 .way {
   background-color: #ff0033;
   margin-top: 120px;
-  padding-top: 200px; }
+  padding-top: 150px; }
   .way h2 {
     font-size: 64px;
     text-align: center;
@@ -283,15 +293,16 @@ header {
         font-weight: 500;
         font-size: 14px;
         margin-top: 14px;
-        letter-spacing: 0.6px; }
+        letter-spacing: 0.6px;
+        line-height: 22px; }
     .way .container .clear {
       clear: both;
       height: 60px; }
 
 .version {
   background-color: #ff0033;
-  padding-top: 200px;
-  padding-bottom: 200px; }
+  padding-top: 150px;
+  padding-bottom: 150px; }
   .version .contaier2 {
     width: 840px;
     margin: 0 auto;
@@ -331,13 +342,13 @@ header {
         .version .contaier2 .v p .right {
           float: right; }
     .version .contaier2 .partial {
-      height: 3px;
+      height: 2px;
       margin: 60px auto;
       width: 90%;
       background-color: #222222; }
 
 .contact {
-  margin-top: 200px; }
+  margin-top: 150px; }
   .contact h2 {
     font-size: 64px;
     text-align: center;
@@ -365,6 +376,8 @@ header {
       text-decoration: none;
       color: #222222;
       margin-right: 100px; }
+      .contact .address a:hover {
+        color: #ff0031; }
       .contact .address a:last-child {
         margin: 0; }
       .contact .address a .ad {
@@ -372,12 +385,15 @@ header {
   .contact .to-top {
     width: 60px;
     height: 60px;
-    margin: 200px auto 60px;
+    margin: 150px auto 60px;
     border: solid #222222 2px;
     border-radius: 50%;
-    line-height: 60px; }
-    .contact .to-top p {
-      font-size: 26px; }
+    line-height: 60px;
+    text-align: center; }
+    .contact .to-top a {
+      font-size: 26px;
+      text-decoration: none;
+      display: block; }
 
 footer {
   text-align: center;
@@ -408,6 +424,6 @@ footer {
   footer .copyrights {
     margin-top: 40px;
     color: #b1b1b1;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100;
     letter-spacing: 1px; }
