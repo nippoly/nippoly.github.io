@@ -54,6 +54,7 @@
     "react-addons-perf": "^15.4.1",
     "react-dom": "^15.4.1",
     "scss-lint": "0.0.0",
+    "sweet-scroll": "^2.2.0",
     "t": "^0.5.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"

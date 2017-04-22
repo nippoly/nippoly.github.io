@@ -1,4 +1,8 @@
 import $ from 'jquery';
+import SweetScroll from "sweet-scroll"
+
+//scrollの実装
+const sweetScroll = new SweetScroll();
 
 $(document).ready( function(){
 	//gifをリロードしても動かす
