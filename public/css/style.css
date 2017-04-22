@@ -118,6 +118,15 @@ body {
   font-size: 12px;
   color: #222222; }
 
+::-moz-selection {
+  background-color: #ff0033; }
+
+::selection {
+  background-color: #ff0033; }
+
+::-moz-selection {
+  background-color: #ff0033; }
+
 header {
   height: 386px;
   width: 100%;
