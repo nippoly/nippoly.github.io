@@ -12,7 +12,7 @@ body {
 }
 
 header {
-	height: 390px;
+	height: 386px;
 	width: 100%;
 	overflow: hidden;
 	.share {
@@ -56,6 +56,10 @@ header {
 			font-size: 16px;
 			border-radius: 6px;
 			letter-spacing: 0.8px;
+			&:hover {
+				box-shadow: 0px 2px 1px 0 rgba(0, 0, 0, 0.3);
+				opacity: 0.8;
+			}
 			&:first-child {
 				margin-right: 32px;
 			}
@@ -101,11 +105,13 @@ header {
 }
 
 .about {
-	margin-top: 150px;
-	padding-bottom: 30px;
+	margin-top: 200px;
+	padding-bottom: 100px;
 	overflow: hidden;
 	h2 {
 		margin-left: 110px;
+		font-size: 16px;
+		line-height: 30px;
 		img {
 			width: 159px;
 		}
@@ -142,8 +148,7 @@ header {
 	}
 	.scsho {
 		float: right;
-		width: 600px;
-		box-shadow: -3px 4px 10px 0 rgba(0, 0, 0, 0.5);
+		width: 660px;
 		margin-top: 50px;
 	}
 }
@@ -151,7 +156,7 @@ header {
 .way {
 	background-color: #ff0033;
 	margin-top: 120px;
-	padding-top: 100px;
+	padding-top: 200px;
 	h2 {
 		font-size: 64px;
 		text-align: center;
@@ -169,32 +174,32 @@ header {
 	.container {
 		width: 1050px;
 		margin: 0 auto;
-		overflow: hidden;
 		margin-top: 105px;
 		.steps {
 			width: 446px;
 			height: 385px;
 			background-color: #fff;
-			border: solid 8px #222222;
+			border: solid 7px #222222;
 			border-radius: 23px;
 			float: left;
 			margin-right: 110px;
 			margin-bottom: 80px;
+			position: relative;
 			text-align: center;
+			&:hover {
+
+			}
 			&:nth-child(2n) {
 				margin: 0;
 			}
 			h3 {
-				width: 167px;
-				height: 60px;
-				text-align: center;
-				border: solid 6px #222222;
-				font-size: 32px;
-				line-height: 62px;
-				margin: 0 auto;
-				position: relative;
-				top: -30px;
+				position: absolute;
+				top: -40px;
+				left: 132px;
 				z-index: 100;
+			}
+			.ma {
+				margin-top: 80px;
 			}
 			h4 {
 				font-size: 18px;
@@ -209,13 +214,17 @@ header {
 				letter-spacing: 0.6px;
 			}
 		}
+		.clear {
+			clear: both;
+ 			height: 60px;
+		}
 	}
 }
 
 .version {
 	background-color: #ff0033;
 	padding-top: 200px;
-	padding-bottom: 130px;
+	padding-bottom: 200px;
 	.contaier2 {
 		width: 840px;
 		margin: 0 auto;
@@ -254,8 +263,8 @@ header {
 				width: 500px;
 				margin: 0 auto;
 				font-size: medium;
-				font-size: 18px;
-				line-height: 46px;
+				font-size: 14px;
+				line-height: 36px;
 				.right {
 					float: right;
 				}
@@ -271,7 +280,7 @@ header {
 }
 
 .contact {
-	margin-top: 82px;
+	margin-top: 200px;
 	h2 {
 		font-size: 64px;
 		text-align: center;
@@ -287,9 +296,8 @@ header {
 		overflow: hidden;
 	}	
 	p {
-		font-size: 18px;
-		font-size: 18px;
-		font-weight: 500;
+		font-size: 16px;
+		font-weight: 300;
 		text-align: center; 
 	}
 	.p1 {
@@ -339,8 +347,9 @@ footer {
 		p {
 			text-align: center;
 			color: #fff;
-			font-size: 20px;
-			font-weight: bold;
+			font-size: 14px;
+			letter-spacing: 2px;
+			font-weight: 300;
 			margin-bottom: 18px;
 		}
 		a {
