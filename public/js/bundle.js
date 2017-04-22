@@ -11875,6 +11875,7 @@ var sweetScroll = new _sweetScroll2.default();
 	(0, _jquery2.default)('#box2').append('<img id="unchi2" src="../img/copy.gif' + '?' + '' + now + '" alt="" />');
 	(0, _jquery2.default)('#box3').append('<img id="unchi3" src="../img/clipboard.gif' + '?' + '' + now + '" alt="" />');
 	(0, _jquery2.default)('#box4').append('<img id="unchi4" src="../img/clip.gif' + '?' + '' + now + '" alt="" />');
+	(0, _jquery2.default)('#box-loading').append('<img id="unchi5" src="../img/loading.gif' + '?' + '' + now + '" alt="" />');
 	//gifを何回も動かす
 	setInterval(function () {
 		var timestamp = new Date().getTime();
@@ -11883,6 +11884,15 @@ var sweetScroll = new _sweetScroll2.default();
 		(0, _jquery2.default)('#unchi3').attr('src', '../img/clipboard.gif' + '?' + timestamp);
 		(0, _jquery2.default)('#unchi4').attr('src', '../img/clip.gif' + '?' + timestamp);
 	}, 1900);
+
+	//loading用
+	setInterval(function () {
+		var timestamp = new Date().getTime();
+		(0, _jquery2.default)('#unchi5').attr('src', '../img/loading.gif' + '?' + timestamp);
+	}, 2800);
+	setTimeout(function () {
+		(0, _jquery2.default)(".loadingWrap").fadeOut("slow");
+	}, 3000);
 
 	//navのhover 
 	var navs = [];

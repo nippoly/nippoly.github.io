@@ -11,6 +11,7 @@ $(document).ready( function(){
 	$('#box2').append('<img id="unchi2" src="../img/copy.gif'+'?'+''+now+'" alt="" />');
 	$('#box3').append('<img id="unchi3" src="../img/clipboard.gif'+'?'+''+now+'" alt="" />');
 	$('#box4').append('<img id="unchi4" src="../img/clip.gif'+'?'+''+now+'" alt="" />');
+	$('#box-loading').append('<img id="unchi5" src="../img/loading.gif'+'?'+''+now+'" alt="" />');
 	//gifを何回も動かす
 	setInterval(function(){
 	    var timestamp = new Date().getTime();
@@ -19,6 +20,15 @@ $(document).ready( function(){
 	    $('#unchi3').attr('src', '../img/clipboard.gif' + '?' + timestamp);
 	    $('#unchi4').attr('src', '../img/clip.gif' + '?' + timestamp);
 	}, 1900);
+
+	//loading用
+	setInterval(function(){
+	    var timestamp = new Date().getTime();
+	    $('#unchi5').attr('src', '../img/loading.gif' + '?' + timestamp);
+	},2800);
+	setTimeout(function(){
+		$(".loadingWrap").fadeOut("slow");
+	},3000);
 
 	//navのhover 
 	var navs = [];

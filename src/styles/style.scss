@@ -402,5 +402,23 @@ footer {
 	}
 }
 
+.loadingWrap{
+	width: 100%;
+	height: 100vh;
+	background: #ff0033;
+	position: fixed;
+	z-index: 120;
+	top: 0;
+	left: 0;
+	text-align: center;
+	img {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		margin-top: -100px;
+		margin-left: -150px;
+	}
+}
+
 
 
