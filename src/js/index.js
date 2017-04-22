@@ -15,4 +15,57 @@ $(document).ready( function(){
 	    $('#unchi3').attr('src', '../img/clipboard.gif' + '?' + timestamp);
 	    $('#unchi4').attr('src', '../img/clip.gif' + '?' + timestamp);
 	}, 1900);
+
+	//navのhover 
+	var navs = [];
+	navs = document.getElementsByClassName("nav_a");
+	$(navs[0]).on("mouseover", function() {
+		$(navs[1]).animate({
+			"opacity" : "0.4"
+		},200);
+		$(navs[2]).animate({
+			"opacity" : "0.4"
+		},200);
+		$(navs[3]).animate({
+			"opacity" : "0.4"
+		},200);
+	});
+	$(navs[1]).on("mouseover", function() {
+		$(navs[0]).animate({
+			"opacity" : "0.4"
+		},200);
+		$(navs[2]).animate({
+			"opacity" : "0.4"
+		},200);
+		$(navs[3]).animate({
+			"opacity" : "0.4"
+		},200);
+	});
+	$(navs[2]).on("mouseover", function() {
+		$(navs[0]).animate({
+			"opacity" : "0.4"
+		},200);
+		$(navs[1]).animate({
+			"opacity" : "0.4"
+		},200);
+		$(navs[3]).animate({
+			"opacity" : "0.4"
+		},200);
+	});
+	$(navs[3]).on("mouseover", function() {
+		$(navs[0]).animate({
+			"opacity" : "0.4"
+		},200);
+		$(navs[1]).animate({
+			"opacity" : "0.4"
+		},200);
+		$(navs[2]).animate({
+			"opacity" : "0.4"
+		},200);
+	});
+	$(navs).on("mouseleave", function() {
+		$(navs).animate({
+			"opacity" : "1"
+		},200);
+	});
 });

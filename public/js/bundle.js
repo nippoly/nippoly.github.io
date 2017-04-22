@@ -10277,6 +10277,59 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		(0, _jquery2.default)('#unchi3').attr('src', '../img/clipboard.gif' + '?' + timestamp);
 		(0, _jquery2.default)('#unchi4').attr('src', '../img/clip.gif' + '?' + timestamp);
 	}, 1900);
+
+	//navのhover 
+	var navs = [];
+	navs = document.getElementsByClassName("nav_a");
+	(0, _jquery2.default)(navs[0]).on("mouseover", function () {
+		(0, _jquery2.default)(navs[1]).animate({
+			"opacity": "0.4"
+		}, 200);
+		(0, _jquery2.default)(navs[2]).animate({
+			"opacity": "0.4"
+		}, 200);
+		(0, _jquery2.default)(navs[3]).animate({
+			"opacity": "0.4"
+		}, 200);
+	});
+	(0, _jquery2.default)(navs[1]).on("mouseover", function () {
+		(0, _jquery2.default)(navs[0]).animate({
+			"opacity": "0.4"
+		}, 200);
+		(0, _jquery2.default)(navs[2]).animate({
+			"opacity": "0.4"
+		}, 200);
+		(0, _jquery2.default)(navs[3]).animate({
+			"opacity": "0.4"
+		}, 200);
+	});
+	(0, _jquery2.default)(navs[2]).on("mouseover", function () {
+		(0, _jquery2.default)(navs[0]).animate({
+			"opacity": "0.4"
+		}, 200);
+		(0, _jquery2.default)(navs[1]).animate({
+			"opacity": "0.4"
+		}, 200);
+		(0, _jquery2.default)(navs[3]).animate({
+			"opacity": "0.4"
+		}, 200);
+	});
+	(0, _jquery2.default)(navs[3]).on("mouseover", function () {
+		(0, _jquery2.default)(navs[0]).animate({
+			"opacity": "0.4"
+		}, 200);
+		(0, _jquery2.default)(navs[1]).animate({
+			"opacity": "0.4"
+		}, 200);
+		(0, _jquery2.default)(navs[2]).animate({
+			"opacity": "0.4"
+		}, 200);
+	});
+	(0, _jquery2.default)(navs).on("mouseleave", function () {
+		(0, _jquery2.default)(navs).animate({
+			"opacity": "1"
+		}, 200);
+	});
 });
 
 },{"jquery":1}]},{},[2]);

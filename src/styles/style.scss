@@ -12,7 +12,7 @@ body {
 }
 
 header {
-	height: 395px;
+	height: 390px;
 	width: 100%;
 	overflow: hidden;
 	.share {
@@ -27,6 +27,7 @@ header {
 				font-size: 14px;
 				vertical-align: top;
 				margin-right: 6px;
+				font-weight: 500;
 			}
 			.fa {
 				font-size: 34px;
@@ -54,13 +55,14 @@ header {
 			line-height: 60px;
 			font-size: 16px;
 			border-radius: 6px;
+			letter-spacing: 0.8px;
 			&:first-child {
 				margin-right: 32px;
 			}
 		}
 	}
 	nav {
-		width: 610px;
+		width: 614px;
 		margin: 0 auto;
 		overflow: hidden;
 		ul {
@@ -80,8 +82,9 @@ header {
 				a {
 					text-decoration: none;
 					color: #222;
-					font-size: 14px;
+					font-size: 12px;
 					font-weight: bold;
+					letter-spacing: 2px;
 				}
 			}
 		}
@@ -113,6 +116,7 @@ header {
 		font-size: 36px;
 		letter-spacing: 1px;
 		margin-left: 105px;
+		color: #333333;
 	}
 	.description {
 		margin-left: 110px;

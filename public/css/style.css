@@ -119,7 +119,7 @@ body {
   color: #222222; }
 
 header {
-  height: 395px;
+  height: 390px;
   width: 100%;
   overflow: hidden; }
   header .share {
@@ -133,7 +133,8 @@ header {
         line-height: 38px;
         font-size: 14px;
         vertical-align: top;
-        margin-right: 6px; }
+        margin-right: 6px;
+        font-weight: 500; }
       header .share .share-box .fa {
         font-size: 34px;
         margin: 0 6px; }
@@ -154,11 +155,12 @@ header {
       text-align: center;
       line-height: 60px;
       font-size: 16px;
-      border-radius: 6px; }
+      border-radius: 6px;
+      letter-spacing: 0.8px; }
       header .links a:first-child {
         margin-right: 32px; }
   header nav {
-    width: 610px;
+    width: 614px;
     margin: 0 auto;
     overflow: hidden; }
     header nav ul {
@@ -176,8 +178,9 @@ header {
         header nav ul li a {
           text-decoration: none;
           color: #222;
-          font-size: 14px;
-          font-weight: bold; }
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 2px; }
 
 .image_view {
   height: 523px;
@@ -199,7 +202,8 @@ header {
     margin-top: 35px;
     font-size: 36px;
     letter-spacing: 1px;
-    margin-left: 105px; }
+    margin-left: 105px;
+    color: #333333; }
   .about .description {
     margin-left: 110px;
     margin-top: 40px;
