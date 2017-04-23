@@ -11907,7 +11907,7 @@ if (userAgent.indexOf('opera') != -1) {
 				(0, _jquery2.default)('#step_2').attr('src', './img/copy.gif' + '?' + timestamp);
 				(0, _jquery2.default)('#step_3').attr('src', './img/clipboard.gif' + '?' + timestamp);
 				(0, _jquery2.default)('#step_4').attr('src', './img/clip.gif' + '?' + timestamp);
-			}, 3200);
+			}, 2900);
 
 			//loading用
 			setInterval(function () {

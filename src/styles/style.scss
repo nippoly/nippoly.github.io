@@ -603,7 +603,8 @@ footer {
 		margin-top: -100px;
 		margin-left: -150px;
 		@include media-query(sp) {
-			margin-left: -120px;
+			margin-left: -50px;
+			width: 100px;
 		}
 	}
 }

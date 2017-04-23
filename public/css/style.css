@@ -641,4 +641,5 @@ footer {
     margin-left: -150px; }
     @media screen and (max-width: 32em) {
       .loadingWrap img {
-        margin-left: -120px; } }
+        margin-left: -50px;
+        width: 100px; } }
