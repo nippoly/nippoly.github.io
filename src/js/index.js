@@ -38,13 +38,13 @@ $(document).ready( function(){
 	    $('#step_2').attr('src', './img/copy.gif' + '?' + timestamp);
 	    $('#step_3').attr('src', './img/clipboard.gif' + '?' + timestamp);
 	    $('#step_4').attr('src', './img/clip.gif' + '?' + timestamp);
-	}, 1900);
+	}, 2000);
 
 	//loading用
 	setInterval(function(){
 	    var timestamp = new Date().getTime();
 	    $('#step_5').attr('src', './img/loading.gif' + '?' + timestamp);
-	},2800);
+	},3000);
 	setTimeout(function(){
 		$(".loadingWrap").fadeOut("slow");
 	},4000);

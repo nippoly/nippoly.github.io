@@ -11902,13 +11902,13 @@ if (userAgent.indexOf('opera') != -1) {
 		(0, _jquery2.default)('#step_2').attr('src', './img/copy.gif' + '?' + timestamp);
 		(0, _jquery2.default)('#step_3').attr('src', './img/clipboard.gif' + '?' + timestamp);
 		(0, _jquery2.default)('#step_4').attr('src', './img/clip.gif' + '?' + timestamp);
-	}, 1900);
+	}, 2000);
 
 	//loading用
 	setInterval(function () {
 		var timestamp = new Date().getTime();
 		(0, _jquery2.default)('#step_5').attr('src', './img/loading.gif' + '?' + timestamp);
-	}, 2800);
+	}, 3000);
 	setTimeout(function () {
 		(0, _jquery2.default)(".loadingWrap").fadeOut("slow");
 	}, 4000);

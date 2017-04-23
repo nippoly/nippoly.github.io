@@ -602,6 +602,9 @@ footer {
 		left: 50%;
 		margin-top: -100px;
 		margin-left: -150px;
+		@include media-query(sp) {
+			margin-left: -120px;
+		}
 	}
 }
 
