@@ -11888,30 +11888,63 @@ if (userAgent.indexOf('opera') != -1) {
 }
 
 (0, _jquery2.default)(document).ready(function () {
-	//gifをリロードしても動かす
-	var now = new Date().getTime();
-	(0, _jquery2.default)('#box').append('<img id="step_1" src="./img/download.gif' + '?' + '' + now + '" alt="" />');
-	(0, _jquery2.default)('#box2').append('<img id="step_2" src="./img/copy.gif' + '?' + '' + now + '" alt="" />');
-	(0, _jquery2.default)('#box3').append('<img id="step_3" src="./img/clipboard.gif' + '?' + '' + now + '" alt="" />');
-	(0, _jquery2.default)('#box4').append('<img id="step_4" src="./img/clip.gif' + '?' + '' + now + '" alt="" />');
-	(0, _jquery2.default)('#box-loading').append('<img id="step_5" src="./img/loading.gif' + '?' + '' + now + '" alt="" />');
-	//gifを何回も動かす
-	setInterval(function () {
-		var timestamp = new Date().getTime();
-		(0, _jquery2.default)('#step_1').attr('src', './img/download.gif' + '?' + timestamp);
-		(0, _jquery2.default)('#step_2').attr('src', './img/copy.gif' + '?' + timestamp);
-		(0, _jquery2.default)('#step_3').attr('src', './img/clipboard.gif' + '?' + timestamp);
-		(0, _jquery2.default)('#step_4').attr('src', './img/clip.gif' + '?' + timestamp);
-	}, 2000);
+	//モバイルかPCの判定
+	var getDevice = function () {
+		var ua = navigator.userAgent;
+		if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+			console.log("sp");
+			//gifをリロードしても動かす
+			var now = new Date().getTime();
+			(0, _jquery2.default)('#box').append('<img id="step_1" src="./img/download.gif' + '?' + '' + now + '" alt="" />');
+			(0, _jquery2.default)('#box2').append('<img id="step_2" src="./img/copy.gif' + '?' + '' + now + '" alt="" />');
+			(0, _jquery2.default)('#box3').append('<img id="step_3" src="./img/clipboard.gif' + '?' + '' + now + '" alt="" />');
+			(0, _jquery2.default)('#box4').append('<img id="step_4" src="./img/clip.gif' + '?' + '' + now + '" alt="" />');
+			(0, _jquery2.default)('#box-loading').append('<img id="step_5" src="./img/loading.gif' + '?' + '' + now + '" alt="" />');
+			//gifを何回も動かす
+			setInterval(function () {
+				var timestamp = new Date().getTime();
+				(0, _jquery2.default)('#step_1').attr('src', './img/download.gif' + '?' + timestamp);
+				(0, _jquery2.default)('#step_2').attr('src', './img/copy.gif' + '?' + timestamp);
+				(0, _jquery2.default)('#step_3').attr('src', './img/clipboard.gif' + '?' + timestamp);
+				(0, _jquery2.default)('#step_4').attr('src', './img/clip.gif' + '?' + timestamp);
+			}, 3200);
 
-	//loading用
-	setInterval(function () {
-		var timestamp = new Date().getTime();
-		(0, _jquery2.default)('#step_5').attr('src', './img/loading.gif' + '?' + timestamp);
-	}, 3000);
-	setTimeout(function () {
-		(0, _jquery2.default)(".loadingWrap").fadeOut("slow");
-	}, 4000);
+			//loading用
+			setInterval(function () {
+				var timestamp = new Date().getTime();
+				(0, _jquery2.default)('#step_5').attr('src', './img/loading.gif' + '?' + timestamp);
+			}, 5000);
+			setTimeout(function () {
+				(0, _jquery2.default)(".loadingWrap").fadeOut("slow");
+			}, 5000);
+		} else {
+			console.log("その他");
+			//gifをリロードしても動かす
+			var now = new Date().getTime();
+			(0, _jquery2.default)('#box').append('<img id="step_1" src="./img/download.gif' + '?' + '' + now + '" alt="" />');
+			(0, _jquery2.default)('#box2').append('<img id="step_2" src="./img/copy.gif' + '?' + '' + now + '" alt="" />');
+			(0, _jquery2.default)('#box3').append('<img id="step_3" src="./img/clipboard.gif' + '?' + '' + now + '" alt="" />');
+			(0, _jquery2.default)('#box4').append('<img id="step_4" src="./img/clip.gif' + '?' + '' + now + '" alt="" />');
+			(0, _jquery2.default)('#box-loading').append('<img id="step_5" src="./img/loading.gif' + '?' + '' + now + '" alt="" />');
+			//gifを何回も動かす
+			setInterval(function () {
+				var timestamp = new Date().getTime();
+				(0, _jquery2.default)('#step_1').attr('src', './img/download.gif' + '?' + timestamp);
+				(0, _jquery2.default)('#step_2').attr('src', './img/copy.gif' + '?' + timestamp);
+				(0, _jquery2.default)('#step_3').attr('src', './img/clipboard.gif' + '?' + timestamp);
+				(0, _jquery2.default)('#step_4').attr('src', './img/clip.gif' + '?' + timestamp);
+			}, 2000);
+
+			//loading用
+			setInterval(function () {
+				var timestamp = new Date().getTime();
+				(0, _jquery2.default)('#step_5').attr('src', './img/loading.gif' + '?' + timestamp);
+			}, 3000);
+			setTimeout(function () {
+				(0, _jquery2.default)(".loadingWrap").fadeOut("slow");
+			}, 4000);
+		}
+	}();
 
 	//navのhover 
 	var navs = [];
