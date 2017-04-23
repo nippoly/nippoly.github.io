@@ -169,14 +169,15 @@ header {
 	margin-top: 150px;
 	@include media-query(sp) {
 		margin-top: 100px;
-		padding-bottom: 20px;
+		padding: 0px 20px;
+		box-sizing: border-box;
 	}
 	padding-bottom: 100px;
 	overflow: hidden;
 	h2 {
 		margin-left: 110px;
 		@include media-query(sp) {
-			margin-left: 30px;
+			margin-left: 0px;
 		}
 		font-size: 12px;
 		line-height: 30px;
@@ -194,7 +195,7 @@ header {
 		letter-spacing: 1px;
 		margin-left: 105px;
 		@include media-query(sp) {
-			margin-left: 25px;
+			margin-left: 0px;
 			font-size: 24px;
 		}
 		color: #333333;
@@ -208,7 +209,7 @@ header {
 	.description {
 		margin-left: 110px;
 		@include media-query(sp) {
-			margin-left: 30px;
+			margin-left: 0px;
 			font-size: 14px;
 			line-height: 26px;
 		}
@@ -243,8 +244,9 @@ header {
 		width: 660px;
 		margin-top: 40px;
 		@include media-query(sp) {
-			width: 300px;
 			width: 100%;
+			position: relative;
+			right: -20px;
 		}
 	}
 }
@@ -361,7 +363,7 @@ header {
 		border-radius: 28px;
 		padding-bottom: 100px;
 		@include media-query(sp) {
-			width: 90%;
+			width: 84%;
 			padding-bottom: 50px;
 		}
 		h2 {
@@ -571,6 +573,7 @@ footer {
 				line-height: 66px;
 				@include media-query(sp) {
 					font-size: 20px;
+					line-height: 56px;
 				}
 			}
 		}
