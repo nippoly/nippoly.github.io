@@ -11859,14 +11859,33 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _sweetScroll = require('sweet-scroll');
+var _sweetScroll5 = require('sweet-scroll');
 
-var _sweetScroll2 = _interopRequireDefault(_sweetScroll);
+var _sweetScroll6 = _interopRequireDefault(_sweetScroll5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //scrollの実装
-var sweetScroll = new _sweetScroll2.default();
+//safariのブラウザ判定
+var userAgent = window.navigator.userAgent.toLowerCase();
+if (userAgent.indexOf('opera') != -1) {
+	console.log("opera");
+	var sweetScroll = new _sweetScroll6.default();
+} else if (userAgent.indexOf('msie') != -1) {
+	console.log("msie");
+	var _sweetScroll = new _sweetScroll6.default();
+} else if (userAgent.indexOf('chrome') != -1) {
+	console.log("chrome");
+	var _sweetScroll2 = new _sweetScroll6.default();
+} else if (userAgent.indexOf('safari') != -1) {
+	console.log("safari");
+} else if (userAgent.indexOf('gecko') != -1) {
+	console.log("gecko");
+	var _sweetScroll3 = new _sweetScroll6.default();
+} else {
+	console.log("違うよ");
+	var _sweetScroll4 = new _sweetScroll6.default();
+}
 
 (0, _jquery2.default)(document).ready(function () {
 	//gifをリロードしても動かす

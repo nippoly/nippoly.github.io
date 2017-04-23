@@ -2,7 +2,26 @@ import $ from 'jquery';
 import SweetScroll from "sweet-scroll"
 
 //scrollの実装
-const sweetScroll = new SweetScroll();
+//safariのブラウザ判定
+let userAgent = window.navigator.userAgent.toLowerCase();
+if (userAgent.indexOf('opera') != -1) {
+  console.log("opera");
+  const sweetScroll = new SweetScroll();
+} else if (userAgent.indexOf('msie') != -1) {
+  console.log("msie");
+  const sweetScroll = new SweetScroll();
+} else if (userAgent.indexOf('chrome') != -1) {
+  console.log("chrome");
+  const sweetScroll = new SweetScroll();
+} else if (userAgent.indexOf('safari') != -1) {
+  console.log("safari");
+} else if (userAgent.indexOf('gecko') != -1) {
+  console.log("gecko");
+  const sweetScroll = new SweetScroll();
+} else {
+  console.log("違うよ");
+  const sweetScroll = new SweetScroll();
+}
 
 $(document).ready( function(){
 	//gifをリロードしても動かす
