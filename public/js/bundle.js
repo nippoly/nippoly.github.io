@@ -11890,18 +11890,18 @@ if (userAgent.indexOf('opera') != -1) {
 (0, _jquery2.default)(document).ready(function () {
 	//gifをリロードしても動かす
 	var now = new Date().getTime();
-	(0, _jquery2.default)('#box').append('<img id="unchi" src="../img/download.gif' + '?' + '' + now + '" alt="" />');
-	(0, _jquery2.default)('#box2').append('<img id="unchi2" src="../img/copy.gif' + '?' + '' + now + '" alt="" />');
-	(0, _jquery2.default)('#box3').append('<img id="unchi3" src="../img/clipboard.gif' + '?' + '' + now + '" alt="" />');
-	(0, _jquery2.default)('#box4').append('<img id="unchi4" src="../img/clip.gif' + '?' + '' + now + '" alt="" />');
+	(0, _jquery2.default)('#box').append('<img id="step_1" src="./img/download.gif' + '?' + '' + now + '" alt="" />');
+	(0, _jquery2.default)('#box2').append('<img id="step_2" src="./img/copy.gif' + '?' + '' + now + '" alt="" />');
+	(0, _jquery2.default)('#box3').append('<img id="step_3" src="./img/clipboard.gif' + '?' + '' + now + '" alt="" />');
+	(0, _jquery2.default)('#box4').append('<img id="step_4" src="./img/clip.gif' + '?' + '' + now + '" alt="" />');
 	(0, _jquery2.default)('#box-loading').append('<img id="unchi5" src="../img/loading.gif' + '?' + '' + now + '" alt="" />');
 	//gifを何回も動かす
 	setInterval(function () {
 		var timestamp = new Date().getTime();
-		(0, _jquery2.default)('#unchi').attr('src', '../img/download.gif' + '?' + timestamp);
-		(0, _jquery2.default)('#unchi2').attr('src', '../img/copy.gif' + '?' + timestamp);
-		(0, _jquery2.default)('#unchi3').attr('src', '../img/clipboard.gif' + '?' + timestamp);
-		(0, _jquery2.default)('#unchi4').attr('src', '../img/clip.gif' + '?' + timestamp);
+		(0, _jquery2.default)('#step_1').attr('src', './img/download.gif' + '?' + timestamp);
+		(0, _jquery2.default)('#step_2').attr('src', './img/copy.gif' + '?' + timestamp);
+		(0, _jquery2.default)('#step_3').attr('src', './img/clipboard.gif' + '?' + timestamp);
+		(0, _jquery2.default)('#step_4').attr('src', './img/clip.gif' + '?' + timestamp);
 	}, 1900);
 
 	//loading用
@@ -11911,7 +11911,7 @@ if (userAgent.indexOf('opera') != -1) {
 	}, 2800);
 	setTimeout(function () {
 		(0, _jquery2.default)(".loadingWrap").fadeOut("slow");
-	}, 3000);
+	}, 4000);
 
 	//navのhover 
 	var navs = [];

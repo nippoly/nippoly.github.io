@@ -26,18 +26,18 @@ if (userAgent.indexOf('opera') != -1) {
 $(document).ready( function(){
 	//gifをリロードしても動かす
 	var now = new Date().getTime();
-	$('#box').append('<img id="unchi" src="../img/download.gif'+'?'+''+now+'" alt="" />');
-	$('#box2').append('<img id="unchi2" src="../img/copy.gif'+'?'+''+now+'" alt="" />');
-	$('#box3').append('<img id="unchi3" src="../img/clipboard.gif'+'?'+''+now+'" alt="" />');
-	$('#box4').append('<img id="unchi4" src="../img/clip.gif'+'?'+''+now+'" alt="" />');
+	$('#box').append('<img id="step_1" src="./img/download.gif'+'?'+''+now+'" alt="" />');
+	$('#box2').append('<img id="step_2" src="./img/copy.gif'+'?'+''+now+'" alt="" />');
+	$('#box3').append('<img id="step_3" src="./img/clipboard.gif'+'?'+''+now+'" alt="" />');
+	$('#box4').append('<img id="step_4" src="./img/clip.gif'+'?'+''+now+'" alt="" />');
 	$('#box-loading').append('<img id="unchi5" src="../img/loading.gif'+'?'+''+now+'" alt="" />');
 	//gifを何回も動かす
 	setInterval(function(){
 	    var timestamp = new Date().getTime();
-	    $('#unchi').attr('src', '../img/download.gif' + '?' + timestamp);
-	    $('#unchi2').attr('src', '../img/copy.gif' + '?' + timestamp);
-	    $('#unchi3').attr('src', '../img/clipboard.gif' + '?' + timestamp);
-	    $('#unchi4').attr('src', '../img/clip.gif' + '?' + timestamp);
+	    $('#step_1').attr('src', './img/download.gif' + '?' + timestamp);
+	    $('#step_2').attr('src', './img/copy.gif' + '?' + timestamp);
+	    $('#step_3').attr('src', './img/clipboard.gif' + '?' + timestamp);
+	    $('#step_4').attr('src', './img/clip.gif' + '?' + timestamp);
 	}, 1900);
 
 	//loading用
@@ -47,7 +47,7 @@ $(document).ready( function(){
 	},2800);
 	setTimeout(function(){
 		$(".loadingWrap").fadeOut("slow");
-	},3000);
+	},4000);
 
 	//navのhover 
 	var navs = [];
