@@ -11894,7 +11894,7 @@ if (userAgent.indexOf('opera') != -1) {
 	(0, _jquery2.default)('#box2').append('<img id="step_2" src="./img/copy.gif' + '?' + '' + now + '" alt="" />');
 	(0, _jquery2.default)('#box3').append('<img id="step_3" src="./img/clipboard.gif' + '?' + '' + now + '" alt="" />');
 	(0, _jquery2.default)('#box4').append('<img id="step_4" src="./img/clip.gif' + '?' + '' + now + '" alt="" />');
-	(0, _jquery2.default)('#box-loading').append('<img id="unchi5" src="../img/loading.gif' + '?' + '' + now + '" alt="" />');
+	(0, _jquery2.default)('#box-loading').append('<img id="step_5" src="../img/loading.gif' + '?' + '' + now + '" alt="" />');
 	//gifを何回も動かす
 	setInterval(function () {
 		var timestamp = new Date().getTime();
@@ -11907,7 +11907,7 @@ if (userAgent.indexOf('opera') != -1) {
 	//loading用
 	setInterval(function () {
 		var timestamp = new Date().getTime();
-		(0, _jquery2.default)('#unchi5').attr('src', '../img/loading.gif' + '?' + timestamp);
+		(0, _jquery2.default)('#step_5').attr('src', './img/loading.gif' + '?' + timestamp);
 	}, 2800);
 	setTimeout(function () {
 		(0, _jquery2.default)(".loadingWrap").fadeOut("slow");

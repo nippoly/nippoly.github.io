@@ -30,7 +30,7 @@ $(document).ready( function(){
 	$('#box2').append('<img id="step_2" src="./img/copy.gif'+'?'+''+now+'" alt="" />');
 	$('#box3').append('<img id="step_3" src="./img/clipboard.gif'+'?'+''+now+'" alt="" />');
 	$('#box4').append('<img id="step_4" src="./img/clip.gif'+'?'+''+now+'" alt="" />');
-	$('#box-loading').append('<img id="unchi5" src="../img/loading.gif'+'?'+''+now+'" alt="" />');
+	$('#box-loading').append('<img id="step_5" src="../img/loading.gif'+'?'+''+now+'" alt="" />');
 	//gifを何回も動かす
 	setInterval(function(){
 	    var timestamp = new Date().getTime();
@@ -43,7 +43,7 @@ $(document).ready( function(){
 	//loading用
 	setInterval(function(){
 	    var timestamp = new Date().getTime();
-	    $('#unchi5').attr('src', '../img/loading.gif' + '?' + timestamp);
+	    $('#step_5').attr('src', './img/loading.gif' + '?' + timestamp);
 	},2800);
 	setTimeout(function(){
 		$(".loadingWrap").fadeOut("slow");
