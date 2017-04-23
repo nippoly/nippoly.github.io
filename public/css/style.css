@@ -131,13 +131,23 @@ header {
   height: 386px;
   width: 100%;
   overflow: hidden; }
+  @media screen and (max-width: 32em) {
+    header {
+      height: 100vh; } }
   header .share {
     width: 100%;
     overflow: hidden;
     margin-top: 20px; }
+    @media screen and (max-width: 32em) {
+      header .share {
+        margin-top: 5px;
+        display: none; } }
     header .share .share-box {
       float: right;
       margin-right: 36px; }
+      @media screen and (max-width: 32em) {
+        header .share .share-box {
+          margin-right: 10px; } }
       header .share .share-box .share-text {
         line-height: 38px;
         font-size: 14px;
@@ -156,9 +166,16 @@ header {
     text-align: center; }
     header h1 img {
       width: 400px; }
+      @media screen and (max-width: 32em) {
+        header h1 img {
+          width: 300px;
+          margin-top: 80px; } }
   header .links {
     width: 520px;
     margin: 30px auto 0; }
+    @media screen and (max-width: 32em) {
+      header .links {
+        width: 240px; } }
     header .links a {
       text-decoration: none;
       color: #fff;
@@ -171,6 +188,9 @@ header {
       font-size: 16px;
       border-radius: 6px;
       letter-spacing: 0.8px; }
+      @media screen and (max-width: 32em) {
+        header .links a {
+          margin-bottom: 10px; } }
       header .links a:hover {
         box-shadow: 0px 2px 1px 0 rgba(0, 0, 0, 0.3);
         opacity: 0.8; }
@@ -180,14 +200,28 @@ header {
     width: 614px;
     margin: 0 auto;
     overflow: hidden; }
+    @media screen and (max-width: 32em) {
+      header nav {
+        width: 100%; } }
     header nav ul {
       width: 100%;
       margin-top: 74px;
       overflow: hidden; }
+      @media screen and (max-width: 32em) {
+        header nav ul {
+          text-align: center;
+          margin-top: 20px; } }
       header nav ul li {
         float: left;
         list-style-type: none;
         margin: 0 50px; }
+        @media screen and (max-width: 32em) {
+          header nav ul li {
+            float: none;
+            padding: 10px 0px; } }
+        @media screen and (max-width: 32em) {
+          header nav ul li {
+            margin: 0 10px; } }
         header nav ul li:first-child {
           margin-left: 0; }
         header nav ul li:last-child {
@@ -198,6 +232,9 @@ header {
           font-size: 12px;
           font-weight: bold;
           letter-spacing: 2px; }
+          @media screen and (max-width: 32em) {
+            header nav ul li a {
+              color: #222; } }
 
 .image_view {
   height: 523px;
@@ -205,17 +242,37 @@ header {
   background-size: cover;
   background-position: 0 -200px;
   background-image: url(../img/nippo-hero.jpg); }
+  @media screen and (max-width: 32em) {
+    .image_view {
+      height: 100vh; } }
+  @media screen and (max-width: 32em) {
+    .image_view {
+      background-color: red;
+      position: absolute;
+      top: 0;
+      background-position: center;
+      z-index: -10; } }
 
 .about {
   margin-top: 150px;
   padding-bottom: 100px;
   overflow: hidden; }
+  @media screen and (max-width: 32em) {
+    .about {
+      margin-top: 100px;
+      padding-bottom: 20px; } }
   .about h2 {
     margin-left: 110px;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 30px; }
+    @media screen and (max-width: 32em) {
+      .about h2 {
+        margin-left: 30px; } }
     .about h2 img {
       width: 159px; }
+      @media screen and (max-width: 32em) {
+        .about h2 img {
+          width: 120px; } }
   .about .comment {
     font-weight: bold;
     margin-top: 35px;
@@ -223,6 +280,15 @@ header {
     letter-spacing: 1px;
     margin-left: 105px;
     color: #333333; }
+    @media screen and (max-width: 32em) {
+      .about .comment {
+        margin-left: 25px;
+        font-size: 24px; } }
+    .about .comment .brs {
+      display: none; }
+      @media screen and (max-width: 32em) {
+        .about .comment .brs {
+          display: inline; } }
   .about .description {
     margin-left: 110px;
     margin-top: 40px;
@@ -231,6 +297,11 @@ header {
     font-size: 16px;
     line-height: 38px;
     float: left; }
+    @media screen and (max-width: 32em) {
+      .about .description {
+        margin-left: 30px;
+        font-size: 14px;
+        line-height: 26px; } }
     .about .description a {
       background-color: #ff0033;
       color: #fff;
@@ -252,16 +323,27 @@ header {
     float: right;
     width: 660px;
     margin-top: 40px; }
+    @media screen and (max-width: 32em) {
+      .about .scsho {
+        width: 300px;
+        width: 100%; } }
 
 .way {
   background-color: #ff0033;
   margin-top: 120px;
   padding-top: 150px; }
+  @media screen and (max-width: 32em) {
+    .way {
+      margin-top: 50px;
+      padding-top: 50px; } }
   .way h2 {
     font-size: 64px;
     text-align: center;
     color: #fff;
     text-shadow: 7px 7px 0 rgba(0, 0, 0, 0.5); }
+    @media screen and (max-width: 32em) {
+      .way h2 {
+        font-size: 32px; } }
   .way .sub-title {
     text-align: center;
     color: #fff;
@@ -269,10 +351,19 @@ header {
     font-weight: medium;
     font-size: 24px;
     overflow: hidden; }
+    @media screen and (max-width: 32em) {
+      .way .sub-title {
+        font-size: 12px; } }
   .way .container {
     width: 1050px;
     margin: 0 auto;
     margin-top: 105px; }
+    @media screen and (max-width: 32em) {
+      .way .container {
+        width: 100%; } }
+    @media screen and (max-width: 32em) {
+      .way .container {
+        margin-top: 60px; } }
     .way .container .steps {
       width: 446px;
       height: 385px;
@@ -284,13 +375,27 @@ header {
       margin-bottom: 80px;
       position: relative;
       text-align: center; }
+      @media screen and (max-width: 32em) {
+        .way .container .steps {
+          width: 84%;
+          margin: 0 auto 70px;
+          float: none;
+          box-sizing: border-box;
+          padding: 0px 5px 10px;
+          height: 100%; } }
       .way .container .steps:nth-child(2n) {
         margin: 0; }
+        @media screen and (max-width: 32em) {
+          .way .container .steps:nth-child(2n) {
+            margin: 0 auto 70px; } }
       .way .container .steps h3 {
         position: absolute;
         top: -40px;
         left: 132px;
-        z-index: 100; }
+        z-index: 10; }
+        @media screen and (max-width: 32em) {
+          .way .container .steps h3 {
+            left: 30px; } }
       .way .container .steps .ma {
         margin-top: 80px; }
       .way .container .steps h4 {
@@ -312,6 +417,10 @@ header {
   background-color: #ff0033;
   padding-top: 150px;
   padding-bottom: 150px; }
+  @media screen and (max-width: 32em) {
+    .version {
+      padding-top: 50px;
+      padding-bottom: 100px; } }
   .version .contaier2 {
     width: 840px;
     margin: 0 auto;
@@ -319,12 +428,20 @@ header {
     border: solid 8px #222222;
     border-radius: 28px;
     padding-bottom: 100px; }
+    @media screen and (max-width: 32em) {
+      .version .contaier2 {
+        width: 90%;
+        padding-bottom: 50px; } }
     .version .contaier2 h2 {
       font-size: 64px;
       text-align: center;
       color: #ff0033;
       margin-top: 50px;
       text-shadow: 6px 6px 0 #be514c; }
+      @media screen and (max-width: 32em) {
+        .version .contaier2 h2 {
+          font-size: 32px;
+          text-shadow: 3px 3px 0 #be514c; } }
     .version .contaier2 .sub-title {
       text-align: center;
       color: #ff0033;
@@ -332,8 +449,16 @@ header {
       font-weight: bold;
       font-size: 24px;
       overflow: hidden; }
+      @media screen and (max-width: 32em) {
+        .version .contaier2 .sub-title {
+          font-size: 12px; } }
     .version .contaier2 .v {
       margin-top: 60px; }
+      @media screen and (max-width: 32em) {
+        .version .contaier2 .v {
+          margin-top: 10px; }
+          .version .contaier2 .v:first-child {
+            margin-top: 30px; } }
       .version .contaier2 .v h5 {
         width: 222px;
         height: 46px;
@@ -343,12 +468,20 @@ header {
         font-size: 24px;
         font-weight: 500;
         margin: 0 auto 28px; }
+        @media screen and (max-width: 32em) {
+          .version .contaier2 .v h5 {
+            width: 150px;
+            font-size: 18px;
+            border: solid 3px #222222; } }
       .version .contaier2 .v p {
         width: 500px;
         margin: 0 auto;
-        font-size: 500;
+        font-weight: 500;
         font-size: 14px;
         line-height: 36px; }
+        @media screen and (max-width: 32em) {
+          .version .contaier2 .v p {
+            width: 220px; } }
         .version .contaier2 .v p .right {
           float: right; }
     .version .contaier2 .partial {
@@ -356,14 +489,24 @@ header {
       margin: 60px auto;
       width: 90%;
       background-color: #222222; }
+      @media screen and (max-width: 32em) {
+        .version .contaier2 .partial {
+          margin: 20px auto; } }
 
 .contact {
   margin-top: 150px; }
+  @media screen and (max-width: 32em) {
+    .contact {
+      margin-top: 50px; } }
   .contact h2 {
     font-size: 64px;
     text-align: center;
     color: #ff0031;
     text-shadow: 5px 5px 0 #be514c; }
+    @media screen and (max-width: 32em) {
+      .contact h2 {
+        font-size: 32px;
+        text-shadow: 3px 3px 0 #be514c; } }
   .contact .sub-title {
     text-align: center;
     color: #ff0031;
@@ -371,27 +514,45 @@ header {
     font-weight: bold;
     font-size: 24px;
     overflow: hidden; }
+    @media screen and (max-width: 32em) {
+      .contact .sub-title {
+        font-size: 12px; } }
   .contact p {
     font-size: 16px;
     font-weight: 300;
     text-align: center; }
+    @media screen and (max-width: 32em) {
+      .contact p {
+        font-size: 14px; } }
   .contact .p1 {
     margin-top: 52px; }
+    @media screen and (max-width: 32em) {
+      .contact .p1 {
+        margin-top: 30px; } }
   .contact .p2 {
     margin-top: 10px; }
   .contact .address {
-    margin: 45px auto 0;
+    margin: 30px auto 0;
     width: 550px; }
+    @media screen and (max-width: 32em) {
+      .contact .address {
+        width: 280px; } }
     .contact .address a {
       text-decoration: none;
       color: #222222;
       margin-right: 100px; }
+      @media screen and (max-width: 32em) {
+        .contact .address a {
+          margin-right: 30px; } }
       .contact .address a:hover {
         color: #ff0031; }
       .contact .address a:last-child {
         margin: 0; }
       .contact .address a .ad {
         font-size: 64px; }
+        @media screen and (max-width: 32em) {
+          .contact .address a .ad {
+            font-size: 48px; } }
   .contact .to-top {
     width: 60px;
     height: 60px;
@@ -400,10 +561,19 @@ header {
     border-radius: 50%;
     line-height: 60px;
     text-align: center; }
+    @media screen and (max-width: 32em) {
+      .contact .to-top {
+        width: 40px;
+        height: 40px;
+        margin: 80px auto 50px;
+        line-height: 40px; } }
     .contact .to-top a {
       font-size: 26px;
       text-decoration: none;
       display: block; }
+      @media screen and (max-width: 32em) {
+        .contact .to-top a {
+          font-size: 20px; } }
 
 footer {
   text-align: center;
@@ -412,8 +582,14 @@ footer {
   footer img {
     width: 340px;
     margin-top: 50px; }
+    @media screen and (max-width: 32em) {
+      footer img {
+        width: 200px; } }
   footer .share2 {
     margin-top: 42px; }
+    @media screen and (max-width: 32em) {
+      footer .share2 {
+        margin-top: 26px; } }
     footer .share2 p {
       text-align: center;
       color: #fff;
@@ -427,10 +603,17 @@ footer {
       display: inline-block;
       border: #fff solid 2px;
       margin: 0 15px; }
+      @media screen and (max-width: 32em) {
+        footer .share2 a {
+          height: 56px;
+          width: 56px; } }
       footer .share2 a .fa {
         color: #fff;
         font-size: 25px;
         line-height: 66px; }
+        @media screen and (max-width: 32em) {
+          footer .share2 a .fa {
+            font-size: 20px; } }
   footer .copyrights {
     margin-top: 40px;
     color: #b1b1b1;

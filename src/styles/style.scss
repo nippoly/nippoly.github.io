@@ -20,15 +20,25 @@ body {
 
 header {
 	height: 386px;
+	@include media-query(sp) {
+		height: 100vh;
+	}
 	width: 100%;
 	overflow: hidden;
 	.share {
 		width: 100%;
 		overflow: hidden;
 		margin-top: 20px;
+		@include media-query(sp) {
+			margin-top: 5px;
+			display: none;
+		}
 		.share-box {
 			float: right;
 			margin-right: 36px;
+			@include media-query(sp) {
+				margin-right: 10px;
+			};
 			.share-text {
 				line-height: 38px;
 				font-size: 14px;
@@ -53,10 +63,17 @@ header {
 		text-align: center;
 		img {
 			width: 400px;
+			@include media-query(sp) {
+				width: 300px;
+				margin-top: 80px;
+			}
 		}
 	}
 	.links {
 		width: 520px;
+		@include media-query(sp) {
+			width: 240px;
+		}
 		margin: 30px auto 0;
 		a {
 			text-decoration: none;
@@ -70,6 +87,9 @@ header {
 			font-size: 16px;
 			border-radius: 6px;
 			letter-spacing: 0.8px;
+			@include media-query(sp) {
+				margin-bottom: 10px;
+			}
 			&:hover {
 				box-shadow: 0px 2px 1px 0 rgba(0, 0, 0, 0.3);
 				opacity: 0.8;
@@ -81,16 +101,30 @@ header {
 	}
 	nav {
 		width: 614px;
+		@include media-query(sp) {
+			width: 100%;
+		}
 		margin: 0 auto;
 		overflow: hidden;
 		ul {
 			width: 100%;
 			margin-top: 74px;
 			overflow: hidden;
+			@include media-query(sp) {
+				text-align: center;
+				margin-top: 20px;
+			}
 			li {
 				float: left;
+				@include media-query(sp) {
+					float: none;
+					padding: 10px 0px;
+				}
 				list-style-type: none;
 				margin: 0 50px;
+				@include media-query(sp) {
+					margin: 0 10px;
+				}
 				&:first-child {
 					margin-left: 0; 
 				}
@@ -100,6 +134,9 @@ header {
 				a {
 					text-decoration: none;
 					color: #222;
+					@include media-query(sp) {
+						color: #222;
+					}
 					font-size: 12px;
 					font-weight: bold;
 					letter-spacing: 2px;
@@ -111,23 +148,43 @@ header {
 
 .image_view {
 	height: 523px;
+	@include media-query(sp) {
+		height: 100vh;
+	}
 	width: 100%;
 	background-size: cover;
 	background-position: 0 -200px;
 	background-image: url(../img/nippo-hero.jpg);
 	// background-attachment: fixed;
+	@include media-query(sp) {
+		background-color: red;
+		position: absolute;
+		top:0;
+		background-position: center;
+		z-index: -10;	
+	}
 }
 
 .about {
 	margin-top: 150px;
+	@include media-query(sp) {
+		margin-top: 100px;
+		padding-bottom: 20px;
+	}
 	padding-bottom: 100px;
 	overflow: hidden;
 	h2 {
 		margin-left: 110px;
-		font-size: 16px;
+		@include media-query(sp) {
+			margin-left: 30px;
+		}
+		font-size: 12px;
 		line-height: 30px;
 		img {
 			width: 159px;
+			@include media-query(sp) {
+				width: 120px;
+			}
 		}
 	}
 	.comment {
@@ -136,10 +193,25 @@ header {
 		font-size: 36px;
 		letter-spacing: 1px;
 		margin-left: 105px;
+		@include media-query(sp) {
+			margin-left: 25px;
+			font-size: 24px;
+		}
 		color: #333333;
+		.brs {
+			display: none;
+			@include media-query(sp) {
+				display: inline;
+			}
+		}
 	}
 	.description {
 		margin-left: 110px;
+		@include media-query(sp) {
+			margin-left: 30px;
+			font-size: 14px;
+			line-height: 26px;
+		}
 		margin-top: 40px;
 		letter-spacing: 0.5px;
 		font-weight: 500;
@@ -170,15 +242,26 @@ header {
 		float: right;
 		width: 660px;
 		margin-top: 40px;
+		@include media-query(sp) {
+			width: 300px;
+			width: 100%;
+		}
 	}
 }
 
 .way {
 	background-color: #ff0033;
 	margin-top: 120px;
+	@include media-query(sp) {
+		margin-top: 50px;
+		padding-top: 50px;
+	}
 	padding-top: 150px;
 	h2 {
 		font-size: 64px;
+		@include media-query(sp) {
+			font-size: 32px;
+		}
 		text-align: center;
 		color: #fff;
 		text-shadow: 7px 7px 0 rgba(0, 0, 0, 0.5);
@@ -189,14 +272,31 @@ header {
 		letter-spacing: 2px;
 		font-weight: medium;
 		font-size: 24px;
+		@include media-query(sp) {
+			font-size: 12px;
+		}
 		overflow: hidden;
 	}
 	.container {
 		width: 1050px;
+		@include media-query(sp) {
+			width: 100%;
+		}
 		margin: 0 auto;
 		margin-top: 105px;
+		@include media-query(sp) {
+			margin-top: 60px;
+		}
 		.steps {
 			width: 446px;
+			@include media-query(sp) {
+				width: 84%;
+				margin: 0 auto 70px;
+				float: none;
+				box-sizing: border-box;
+				padding: 0px 5px 10px;
+				height: 100%;
+			}
 			height: 385px;
 			background-color: #fff;
 			border: solid 7px #222222;
@@ -206,17 +306,20 @@ header {
 			margin-bottom: 80px;
 			position: relative;
 			text-align: center;
-			&:hover {
-
-			}
 			&:nth-child(2n) {
 				margin: 0;
+				@include media-query(sp) {
+					margin: 0 auto 70px;
+				}
 			}
 			h3 {
 				position: absolute;
 				top: -40px;
 				left: 132px;
-				z-index: 100;
+				z-index: 10;
+				@include media-query(sp) {
+					left: 30px;
+				}
 			}
 			.ma {
 				margin-top: 80px;
@@ -246,6 +349,10 @@ header {
 	background-color: #ff0033;
 	padding-top: 150px;
 	padding-bottom: 150px;
+	@include media-query(sp) {
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
 	.contaier2 {
 		width: 840px;
 		margin: 0 auto;
@@ -253,12 +360,20 @@ header {
 		border: solid 8px #222222;
 		border-radius: 28px;
 		padding-bottom: 100px;
+		@include media-query(sp) {
+			width: 90%;
+			padding-bottom: 50px;
+		}
 		h2 {
 			font-size: 64px;
 			text-align: center;
 			color: #ff0033;
 			margin-top: 50px;
 			text-shadow: 6px 6px 0 #be514c;
+			@include media-query(sp) {
+				font-size: 32px;
+				text-shadow: 3px 3px 0 #be514c;
+			}
 		}
 		.sub-title {
 			text-align: center;
@@ -267,9 +382,18 @@ header {
 			font-weight: bold;
 			font-size: 24px;
 			overflow: hidden;
+			@include media-query(sp) {
+				font-size: 12px;
+			}
 		}
 		.v {
 			margin-top: 60px;
+			@include media-query(sp) {
+				margin-top: 10px;
+				&:first-child {
+					margin-top: 30px;
+				}
+			}
 			h5 {
 				width: 222px;
 				height: 46px;
@@ -280,13 +404,21 @@ header {
 				font-size: 24px;
 				font-weight: 500;
 				margin: 0 auto 28px;
+				@include media-query(sp) {
+					width: 150px;
+					font-size: 18px;
+					border: solid 3px #222222;
+				}
 			}
 			p {
 				width: 500px;
 				margin: 0 auto;
-				font-size: 500;
+				font-weight: 500;
 				font-size: 14px;
 				line-height: 36px;
+				@include media-query(sp) {
+					width: 220px;
+				}
 				.right {
 					float: right;
 				}
@@ -297,17 +429,27 @@ header {
 			margin: 60px auto;
 			width: 90%;
 			background-color: #222222;
+			@include media-query(sp) {
+				margin: 20px auto;
+			}
 		}
 	}
 }
 
 .contact {
 	margin-top: 150px;
+	@include media-query(sp) {
+		margin-top: 50px;
+	}
 	h2 {
 		font-size: 64px;
 		text-align: center;
 		color: #ff0031;
 		text-shadow: 5px 5px 0 #be514c;
+		@include media-query(sp) {
+			font-size: 32px;
+			text-shadow: 3px 3px 0 #be514c;
+		}
 	}
 	.sub-title {
 		text-align: center;
@@ -316,25 +458,40 @@ header {
 		font-weight: bold;
 		font-size: 24px;
 		overflow: hidden;
+		@include media-query(sp) {
+			font-size: 12px;
+		}
 	}	
 	p {
 		font-size: 16px;
 		font-weight: 300;
 		text-align: center; 
+		@include media-query(sp) {
+			font-size: 14px;
+		}
 	}
 	.p1 {
 		margin-top: 52px;
+		@include media-query(sp) {
+			margin-top: 30px;
+		}
 	}
 	.p2 {
 		margin-top: 10px;
 	}
 	.address {
-		margin: 45px auto 0;
+		margin: 30px auto 0;
 		width: 550px;
+		@include media-query(sp) {
+			width: 280px;
+		}
 		a {
 			text-decoration: none;
 			color: #222222;
 			margin-right: 100px;
+			@include media-query(sp) {
+				margin-right: 30px;
+			}
 			&:hover {
 				color: #ff0031;
 			}
@@ -343,6 +500,9 @@ header {
 			}
 			.ad {
 				font-size: 64px;
+				@include media-query(sp) {
+					font-size: 48px;
+				}
 			}
 		}
 	}
@@ -354,10 +514,19 @@ header {
 		border-radius: 50%;
 		line-height: 60px;
 		text-align: center;
+		@include media-query(sp) {
+			width: 40px;
+			height: 40px;
+			margin: 80px auto 50px;
+			line-height: 40px;
+		}
 		a {
 			font-size: 26px;
 			text-decoration: none;
 			display: block;
+			@include media-query(sp) {
+				font-size: 20px;
+			}
 		}
 	}
 }
@@ -369,9 +538,15 @@ footer {
 	img {
 		width: 340px;
 		margin-top: 50px;
+		@include media-query(sp) {
+			width: 200px;
+		}
 	}
 	.share2 {
 		margin-top: 42px;
+		@include media-query(sp) {
+			margin-top: 26px;
+		}
 		p {
 			text-align: center;
 			color: #fff;
@@ -386,10 +561,17 @@ footer {
 			display: inline-block;
 			border: #fff solid 2px;
 			margin: 0 15px;
+			@include media-query(sp) {
+				height: 56px;
+				width: 56px;
+			}
 			.fa {
 				color: #fff;
 				font-size: 25px;
 				line-height: 66px;
+				@include media-query(sp) {
+					font-size: 20px;
+				}
 			}
 		}
 	}
