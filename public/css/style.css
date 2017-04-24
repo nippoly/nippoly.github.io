@@ -329,6 +329,9 @@ header {
         width: 100%;
         position: relative;
         right: -20px; } }
+    @media screen and (min-width: 96em) {
+      .about .scsho {
+        width: 1000px; } }
 
 .way {
   background-color: #ff0033;

@@ -13,6 +13,7 @@ var buffer = require("vinyl-buffer"); //uglifyするためのもの //今は使�
 var node = require("node-dev");
 var source = require("vinyl-source-stream"); //browserifyとgulpを使用する場合は、vinyl-source-streamで橋渡ししないといけない
 var gcmq = require('gulp-group-css-media-queries'); //メディアクエリをまとめて小さくする
+var ghPages = require("gulp-gh-pages"); //ghpagesでpathを通す
 
 
 
@@ -67,6 +68,12 @@ gulp.task("sass",function(){
 		.pipe(autoprefixer())
 		.pipe(gulp.dest("public/css"));
 	browser.reload();
+});
+
+
+gulp.task('deploy', function() {
+  return gulp.src('./public/**/*')
+    .pipe(ghPages());
 });
 
 

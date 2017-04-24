@@ -248,6 +248,9 @@ header {
 			position: relative;
 			right: -20px;
 		}
+		@include media-query(pc) {
+			width: 1000px;
+		}
 	}
 }
 
