@@ -8,10 +8,10 @@ nippolyにLPを作成する
 1. devブランチにしてあるほうでgulpをビルドする
 
 ### gulpのビルド方法
-  1. nodeをダウンロード
-  1. `npm install gulp -g`
-  1. `npm install`
-  1. `gulp`
+1. nodeをダウンロード
+1. `npm install gulp -g`
+1. `npm install`
+1. `gulp`
 
 これでオートコンパイルとオートリロードされていれば大丈夫です。
 
