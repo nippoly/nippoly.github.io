@@ -14,6 +14,7 @@ var node = require("node-dev");
 var source = require("vinyl-source-stream"); //browserifyとgulpを使用する場合は、vinyl-source-streamで橋渡ししないといけない
 var gcmq = require('gulp-group-css-media-queries'); //メディアクエリをまとめて小さくする
 var ghPages = require("gulp-gh-pages"); //ghpagesでpathを通す
+var minifycss = require('gulp-minify-css'); //cssを圧縮する
 
 
 
@@ -71,6 +72,13 @@ gulp.task("sass",function(){
 });
 
 
+gulp.task('minify-css', function() {
+  return gulp.src("./public/css/style.css")
+    .pipe(minifycss())
+    .pipe(gulp.dest('./public/css/'));
+});
+
+
 gulp.task('deploy', function() {
   return gulp.src('./public/**/*')
     .pipe(ghPages());
@@ -78,7 +86,7 @@ gulp.task('deploy', function() {
 
 
 
-gulp.task("default",["server","babel"],function(){
+gulp.task("default",["server","babel","minify-css"],function(){
 	gulp.src('public/style.css')
         .pipe(gcmq())
         .pipe(gulp.dest('public.css'));
